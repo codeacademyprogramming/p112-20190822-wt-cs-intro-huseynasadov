@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-WT-Task-1", "CS-WT-Task-1\CS-WT-Task-1.csproj", "{577C8BDB-3DEB-4913-B41D-277B0F72252B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CS-WT-Task-2", "CS-WT-Task-2\CS-WT-Task-2.csproj", "{57144B53-E262-45C4-967C-A6743AECF935}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{577C8BDB-3DEB-4913-B41D-277B0F72252B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{577C8BDB-3DEB-4913-B41D-277B0F72252B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{577C8BDB-3DEB-4913-B41D-277B0F72252B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{577C8BDB-3DEB-4913-B41D-277B0F72252B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57144B53-E262-45C4-967C-A6743AECF935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57144B53-E262-45C4-967C-A6743AECF935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57144B53-E262-45C4-967C-A6743AECF935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57144B53-E262-45C4-967C-A6743AECF935}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52CCEEC8-3891-41B5-994A-6CFE0A8CDC53}
+	EndGlobalSection
+EndGlobal
