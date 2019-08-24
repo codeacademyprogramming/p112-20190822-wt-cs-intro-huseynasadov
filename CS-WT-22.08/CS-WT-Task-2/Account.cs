@@ -21,5 +21,10 @@ namespace CS_WT_Task_2
             Balans = 0;
         }
 
+        public void Allinfo()
+        {
+            Console.WriteLine($"\n{Surname.ToUpper()} {Name.ToUpper()}  Seriya AZE N:{IDNumber}");
+        }
+
     }
 }
