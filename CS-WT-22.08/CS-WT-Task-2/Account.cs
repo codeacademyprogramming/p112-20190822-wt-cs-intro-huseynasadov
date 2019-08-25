@@ -26,5 +26,6 @@ namespace CS_WT_Task_2
             Console.WriteLine($"\n{Surname.ToUpper()} {Name.ToUpper()}  Seriya AZE N:{IDNumber}");
         }
 
+
     }
 }

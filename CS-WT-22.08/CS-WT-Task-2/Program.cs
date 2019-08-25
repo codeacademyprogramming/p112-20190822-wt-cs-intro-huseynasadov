@@ -10,22 +10,40 @@ namespace CS_WT_Task_2
     {
         static void Main(string[] args)
         {
+            // Hesabin yaradilmasi
             Console.Write("Adinizi daxil edin : ");
-            string Name = Console.ReadLine();
+        name: string Name = Console.ReadLine();
+            if (Name == "")
+            {
+                Console.Write("Adinizi duzgun daxil edin : ");
+                goto name;
+            }
             Console.Write("Soyadinizi daxil edin : ");
-            string Surname = Console.ReadLine();
+        surname: string Surname = Console.ReadLine();
+            if (Surname == "")
+            {
+                Console.Write("Soyadinizi duzgun daxil edin : ");
+                goto surname;
+            }
             Console.Write("Sexsiyyet vesiqenizin Seriya nomresini daxil edin: AZE N: ");
-            int IDNumber = int.Parse(Console.ReadLine());
+        id: string IDNumber = Console.ReadLine();
+            if (IDNumber.ToString() == "")
+            {
+                Console.Write("Seriya nomrenizi duzgun daxil edin : ");
+
+                goto id;
+            }
             Menu menu = new Menu();
             menu.menu();
             int n = int.Parse(Console.ReadLine());
-            Account account = new Account(Name, Surname, IDNumber);
+            Account account = new Account(Name, Surname, int.Parse(IDNumber));
 
+            // Emeliyyatlarin secilmesi
             while (n != 0)
             {
                 switch (n)
                 {
-
+                    // Balansin gosterilmesi
                     case 1:
                         account.Allinfo();
                         Console.WriteLine($"\nSizin hal-hazirki balansiniz : {account.Balans} AZN teskil edir");
@@ -33,6 +51,8 @@ namespace CS_WT_Task_2
                         n = int.Parse(Console.ReadLine());
 
                         break;
+
+                    // Balansin artirilmasi
                     case 2:
                         Console.WriteLine("\nArtirilacaq meblegi daxil edin");
                         Double PlusBalans = Double.Parse(Console.ReadLine());
@@ -41,6 +61,8 @@ namespace CS_WT_Task_2
                         menu.menu();
                         n = int.Parse(Console.ReadLine());
                         break;
+
+                    // Balansin azaldilmasi
                     case 3:
                         Console.WriteLine("\nAzaldilacaq meblegi daxil edin");
                         Double MinusBalans = Double.Parse(Console.ReadLine());
@@ -57,6 +79,8 @@ namespace CS_WT_Task_2
                         menu.menu();
                         n = int.Parse(Console.ReadLine());
                         break;
+
+                    // Hesabda deyisiklik edilmesi
                     case 4:
                         Console.WriteLine("\nAdinizi daxil edin :");
                         string chgName = Console.ReadLine();
@@ -97,6 +121,7 @@ namespace CS_WT_Task_2
                                 else
                                 {
                                     account.IDNumber = int.Parse(chgId);
+                                    Console.WriteLine("\nHesabin deyisdirilmesi Ugurla Basa catdi!\n");
                                 }
                             }
                         }
@@ -110,6 +135,7 @@ namespace CS_WT_Task_2
                         n = int.Parse(Console.ReadLine());
                         break;
                 }
+
             }
 
         }

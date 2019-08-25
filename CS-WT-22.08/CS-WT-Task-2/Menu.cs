@@ -17,6 +17,8 @@ namespace CS_WT_Task_2
 4 - Hesab melumatlarini deyis
 0 - Cixis
 ");
+            
+            
         }
     }
 }
